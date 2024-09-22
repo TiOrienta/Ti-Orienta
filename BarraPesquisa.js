@@ -12,7 +12,7 @@ function BarraPesquisa(){
   return(
     <View>
       <StatusBar barStyle = "light-content"/>
-      <TextInput placeholder='PEsquisar'
+      <TextInput placeholder='Selecionar Destino'
       onChangeText={setSearchWord}/>
 
       <ScrollView>
@@ -30,5 +30,6 @@ function BarraPesquisa(){
       </ScrollView>
     </View>  
 )}
+
 
 export default BarraPesquisa; 

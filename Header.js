@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-
+import BarraPesquisa from './BarraPesquisa.js';
 
 function Header(){
     return(
         <View style = {style.containerBack}>
             <View style = {style.container}>
                 <View style = {style.Procurar}>
-                    <Text> Para onde quer ir? </Text>
+                    <BarraPesquisa/>
                 </View>
             </View>
         </View>    
@@ -31,7 +31,7 @@ const style = StyleSheet.create({
         backgroundColor: '#4891FF',
         alignItems: 'center',
         justifyContent: 'flex-start',
-        marginBottom: 0,
+        marginBottom: 600,
         height: 200,
         width: '100%',
         borderBottomLeftRadius: 20,
@@ -44,8 +44,7 @@ const style = StyleSheet.create({
         borderRadius: 100,
         width: 200,
         height: 50,
-
-        
+    
     },
     headerText: {
         fontSize: 20,
